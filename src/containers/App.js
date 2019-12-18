@@ -1,6 +1,8 @@
 import React from 'react';
 import '../scss/index.scss';
 
+import AlbumList from '../components/AlbumList';
+
 const App = () => {
   return (
     <div id="mainContainer" className="container">
@@ -30,12 +32,7 @@ const App = () => {
 
       </section>
 
-      <section className="album-list">
-        <h1 className="text-center">Your List</h1>
-        <div id="listWrapper" className="album-list-wrapper">
-
-        </div>
-      </section>
+      <AlbumList />
 
     </div>
   );
