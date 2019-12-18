@@ -1,0 +1,81 @@
+# Don't check auto-generated stuff into git
+build
+coverage
+node_modules
+package-lock.json
+stats.json
+src/index.css
+yarn.lock
+
+# Cruft
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Files and Caching
+/.sass-cache
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Thumbnails
+._*
+Thumbs.db
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Logs
+npm-debug.log*
+testem.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS or Editor folders
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+.idea
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+
+# awsmobilejs
+appsync-info.json
+aws-info.json
+project-info.json
+aws-exports.*
+awsmobilejs/.awsmobile/backend-build
+awsmobilejs/\#current-backend-info
+~awsmobilejs-*/
+private/example wx.json
+src/components/Test/HelloWorld.js
+src/routes/Users/Usage.js
+
+#env
+.env

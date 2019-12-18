@@ -1,0 +1,76 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["airbnb", "plugin:react/recommended", "prettier"],
+    "env": {
+      "browser": true,
+      "es6": true,
+      "jest": true,
+      "node": true
+    },
+    "plugins": [
+      "jsx-a11y",
+      "react"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "arrow-parens": ["error", "as-needed"],
+      "arrow-body-style": [
+        2,
+        "as-needed"
+      ],
+      "class-methods-use-this": "off",
+      "comma-dangle": [
+        "error",
+        "only-multiline"
+      ],
+      "function-paren-newline": "off",
+      "global-require": "off",
+      "import/no-extraneous-dependencies": "off",
+      "import/prefer-default-export": "off",
+      "indent": [
+        2,
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "jsx-a11y/anchor-is-valid": "off",
+      "jsx-a11y/click-events-have-key-events": "off",
+      "jsx-a11y/label-has-for": "off",
+      "jsx-a11y/no-noninteractive-element-interactions": "off",
+      "max-len": "off",
+      "no-alert": "off",
+      "no-console": "off",
+      "no-param-reassign": "off",
+      "no-plusplus": "off",
+      "no-restricted-syntax": "off",
+      "no-shadow": "off",
+      "no-underscore-dangle": "off",
+      "no-unused-expressions": "off",
+      "operator-linebreak": "off",
+      "react/destructuring-assignment": "off",
+      "react/display-name": "off",
+      "react/forbid-prop-types": "off",
+      "react/jsx-curly-brace-presence": "off",
+      "react/jsx-one-expression-per-line": "off",
+      "react/jsx-filename-extension": "off",
+      "react/jsx-first-prop-new-line": [
+        2,
+        "multiline"
+      ],
+      "react/jsx-key": "off",
+      "react/no-access-state-in-setstate": "off",
+      "react/no-danger": "off",
+      "react/no-unescaped-entities": "off",
+      "react/sort-comp": "off",
+      "react/prop-types": "off",
+      "react/require-default-props": 0,
+      "react/self-closing-comp": 0
+    }
+  }
