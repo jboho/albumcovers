@@ -11,7 +11,7 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CREDStudios/albumcovers-react"
+    "url": "https://github.com/jboho/albumcovers-react"
   },
   "scripts": {
     "prebuild:css": "node-sass-chokidar src/scss -o src/",
