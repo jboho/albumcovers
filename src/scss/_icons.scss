@@ -1,0 +1,39 @@
+.icon:before {
+  font-family: 'fontawesome';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.close-content {
+  font-size: $close-button-size;
+  cursor: pointer;
+  color: $close-button-color;
+  &:before {
+    content: '\f00d';
+  }
+  &:hover {
+    color: $close-button-hover-color;
+  }
+}
+
+.chevron-left {
+  color: #fff;
+  font-size: 1.25em;
+  &:before {
+    content: "\f053";
+  }
+}
+
+.chevron-right {
+  color: #fff;
+  font-size: 1.25em;
+  &:before {
+    content: "\f054";
+  }
+}

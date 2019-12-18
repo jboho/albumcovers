@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  transition: padding 300ms ease-in-out;
+  &.counter-active {
+    padding-top: 3rem;
+    transition: padding 300ms ease-in-out;
+  }
+}
+
+.main {
+  text-align: center;
+}

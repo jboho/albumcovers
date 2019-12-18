@@ -1,0 +1,23 @@
+article,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+small, .small  { font-size: 85%; line-height: inherit; }
+strong         { font-weight: bold; line-height: inherit; }
+em             { font-weight: italic; line-height: inherit; }
+img { border: 0; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+hr {
+  box-sizing: content-box;
+  height: 0;
+}

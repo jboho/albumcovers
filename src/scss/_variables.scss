@@ -1,0 +1,100 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Grays
+// -------------------------
+$gray-darker:             #333!default;
+$gray-dark:               #666!default;
+$gray:                    #808080!default;
+$gray-light:              #aaa!default;
+$gray-lighter:            #ccc!default;
+$gray-lightest:           #f3f3f3!default;
+
+// Brand colors
+// -------------------------
+$brand-primary:           #ff8000!default;
+$brand-secondary:         #057d9f!default;
+$brand-neutral:           #e7e7e7!default;
+
+// Scaffolding
+// -------------------------
+$body-bg:                 #f3f3f3!default;
+$text-color:              #606060!default;
+$border-color:            #d3d3d3!default;
+$disabled-color:          $gray-light!default;
+
+// Links
+// -------------------------
+$link-color:              $brand-secondary!default;
+$link-hover-color:        darken($link-color, 5%)!default;
+
+// Typography
+// -------------------------
+$font-family-sans-serif:      "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif!default;
+$font-family-base:            $font-family-sans-serif!default;
+
+$font-size-base:              1rem!default;
+
+$font-weight-base:            400!default;
+$font-weight-light:           300!default;
+$font-weight-bold:            900!default;
+
+$font-size-h1:                2rem!default;
+$font-size-h2:                1.75rem!default;
+$font-size-h3:                1.5rem!default;
+$font-size-h4:                1.25rem!default;
+$font-size-h5:                1rem!default;
+$font-size-h6:                .75rem!default;
+
+$line-height-base:            1.6!default;
+$line-height-em:              ($line-height-base * 1em)!default;
+
+$headings-font-family:        "Lato Light", "Helvetica Neue", Helvetica, Arial, sans-serif!default;
+$headings-font-family-bold:   "Lato Black", "Helvetica Neue", Helvetica, Arial, sans-serif!default;
+$headings-font-weight:        $font-weight-base!default;
+$headings-line-height:        1.1!default;
+$headings-color:              inherit!default;
+
+// Text colors
+// ------------------------
+$text-muted:                  $gray-lighter!default;
+
+// Iconography
+// -------------------------
+$icon-font-path:              "../fonts/"!default;
+$icon-font-name:              "fontawesome"!default;
+
+$custom-image-path:           "../img/custom/"!default; // custom images and fallbacks
+$web-icon-path:               "../img/webicons/"!default; // social web icons
+
+// Hr border color
+// -------------------------
+$hr-border:                   $gray-lightest!default;
+
+// Preloader
+// --------------------------
+$preloader-size:              4em!default;
+$preloader-color:             $brand-primary!default;
+
+// Close button
+// -------------------------
+$close-button-size:           1.75em!default;
+$close-button-color:          $gray-light!default;
+$close-button-hover-color:    darken($close-button-color, 20%)!default;
+
+// --------------------------------------------------
+// GRID
+// --------------------------------------------------
+
+// Base styles
+// -------------------------
+
+$grid-gutter-width:        2.5em!default;
+$site-min-width:           20em!default;
+$site-max-width:           90em!default;
+$grid-max-width:           68.125em!default;
+
+$breakpoint-sm:            30em!default;
+$breakpoint-md:            48em!default;
+$breakpoint-lg:            62.5em!default;

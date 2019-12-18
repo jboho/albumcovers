@@ -1,0 +1,57 @@
+.album-list {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: lighten($brand-neutral, 5%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1000;
+  transition: transform 300ms ease-in-out;
+  transform: translateY(-100%);
+}
+.album-list-wrapper {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+  padding: 0 3.5rem;
+  width: 100%;
+  width: 22rem;
+  margin: 0 auto;
+  @media (min-width: 39rem) {
+    width: 39rem;
+  }
+  @media (min-width: 56rem) {
+    width: 56rem;
+  }
+  @media (min-width: 73rem) {
+    width: 73rem;
+  }
+  @media (min-width: 88rem) {
+    width: 88rem;
+  }
+  .flex-item {
+    float: left;
+    padding: 1rem;
+    .album-slide {
+      width: 14rem;
+      @media (min-width: 41rem) {
+        height: 25rem;
+      }
+    }
+  }
+}
+
+.list-active {
+  .album-list {
+    top: 3rem;
+    transition: transform 300ms ease-in-out;
+    transform: translateY(0);
+  }
+}
