@@ -1,11 +1,23 @@
 # Don't check auto-generated stuff into git
-build
-coverage
-node_modules
+**/build
+**/dist
+**/*.tsbuildinfo
+**/coverage
+**/node_modules
+**/.venv/
+**/__pycache__/
+**/*.pyc
+**/*.egg-info/
+**/.pytest_cache/
 package-lock.json
-stats.json
-src/index.css
-yarn.lock
+**/stats.json
+**/src/index.css
+**/src/index.css.map
+**/yarn.lock
+
+# per-version local secrets (see */config.example.js or .env.example)
+**/config.js
+**/.env
 
 # Cruft
 .DS_Store
@@ -76,6 +88,3 @@ awsmobilejs/\#current-backend-info
 private/example wx.json
 src/components/Test/HelloWorld.js
 src/routes/Users/Usage.js
-
-#env
-.env

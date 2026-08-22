@@ -1,0 +1,9 @@
+# Compiled binaries (this module builds to ./10-go or ./albumcovers)
+/10-go
+/albumcovers
+
+# Test / coverage artifacts
+*.out
+
+# Local secrets are also covered by the root .gitignore (**/.env)
+.env

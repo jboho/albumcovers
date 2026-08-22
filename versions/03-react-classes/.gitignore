@@ -1,0 +1,6 @@
+# Stack-specific ignores for the 03-react-classes version.
+# (Root .gitignore already covers node_modules, dist, .env, coverage, etc.)
+node_modules
+dist
+coverage
+*.local

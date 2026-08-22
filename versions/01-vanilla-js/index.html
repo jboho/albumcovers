@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Top Ten Favorite Album List Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="mainContainer" class="container">
+      <section id="albumCounter" class="album-list-counter">
+        You have selected <span class="count">1 album</span>.
+        <button type="button" id="toggleListButton" class="button button-sm button-neutral">View Your List</button>
+      </section>
+
+      <section class="main">
+        <div class="explainer">
+          <h1>Top <span class="brand-primary">10</span> Favorite Album List Builder</h1>
+          <p class="lead">Create your own Top 10 List of the all-time greatest albums by beginning with your search below.</p>
+        </div>
+        <div class="search-group">
+          <input
+            type="search"
+            class="search-input"
+            id="searchAlbumCovers"
+            name="searchAlbumCovers"
+            placeholder="Enter an album or artist name ..."
+          />
+          <span class="search-group-btn">
+            <button class="button button-primary" id="searchButton" type="button">Go!</button>
+          </span>
+        </div>
+      </section>
+
+      <section id="searchResults" class="album-search-results"></section>
+
+      <section class="album-list">
+        <h1 class="text-center">Your List</h1>
+        <div id="listWrapper" class="album-list-wrapper"></div>
+      </section>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="album-searcher.js"></script>
+  </body>
+</html>

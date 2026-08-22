@@ -1,0 +1,3 @@
+# Svelte / Vite build artifacts (root .gitignore already covers node_modules, dist, .env)
+.svelte-kit
+vite.config.ts.timestamp-*
