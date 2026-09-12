@@ -11,7 +11,7 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jboho/albumcovers-react"
+    "url": "https://github.com/jboho/albumcovers"
   },
   "scripts": {
     "prebuild:css": "sass src/scss/index.scss src/index.css",
