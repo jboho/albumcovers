@@ -2,6 +2,14 @@
 
 const AlbumSearcher = (function () {
 
+  // Last.fm metadata is user-contributed; escape it before it reaches innerHTML.
+  const escapeHtml = (value) =>
+    String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+
   var module = {
 
     // constants and elements
@@ -168,12 +176,12 @@ const AlbumSearcher = (function () {
         albumArr.push (
           `<div class="flex-item">
               <div class="album-slide">
-                <img class="album-image" src='${albumObj.image}'>
+                <img class="album-image" src="${escapeHtml(albumObj.image)}">
                 <div class="album-info below">
                   <div class="album-info-box">
-                    <h4>${albumObj.name}</h4>
-                    <p class="artist">${albumObj.artist}</p>
-                    <button class="remove-from-list button button-secondary button-small" id="${albumObj.id}">Remove</button>
+                    <h4>${escapeHtml(albumObj.name)}</h4>
+                    <p class="artist">${escapeHtml(albumObj.artist)}</p>
+                    <button class="remove-from-list button button-secondary button-small" id="${escapeHtml(albumObj.id)}">Remove</button>
                   </div>
                 </div>
               </div>
@@ -203,13 +211,13 @@ const AlbumSearcher = (function () {
           !this.isAlbumInList(album.mbid) && albumArr.push (
             `<div class="flex-item">
               <div class="album-slide">
-                <img class="album-image" src="${album.image[2]['#text']}" />
+                <img class="album-image" src="${escapeHtml(album.image[2]['#text'])}" />
                 <div class="album-info overlay">
                   <a class="close-button"><span class="icon close-content"></span></a>
                   <div class="album-info-box">
-                    <h4>${album.name}</h4>
-                    <p class="artist">${album.artist}</p>
-                    <button class="add-to-list button button-secondary" data-album='${dataString}' id="${album.mbid}">Add To List</button>
+                    <h4>${escapeHtml(album.name)}</h4>
+                    <p class="artist">${escapeHtml(album.artist)}</p>
+                    <button class="add-to-list button button-secondary" data-album="${escapeHtml(dataString)}" id="${escapeHtml(album.mbid)}">Add To List</button>
                   </div>
                 </div>
               </div>
