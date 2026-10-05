@@ -80,7 +80,7 @@ Requires **Node 22** (see `.nvmrc`); any Node 20.19+/22.12+ satisfies Vite 8.
 
 ```
 nvm use
-npm install               # in this shell, prefix with `command`: command npm install
+npm install
 cp .env.example .env      # fill in a real VITE_LASTFM_API_KEY
 npm run dev               # http://localhost:5177
 npm test                  # Vitest (lastfm lib, Pinia store, SearchResults component)

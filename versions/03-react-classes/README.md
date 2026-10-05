@@ -55,7 +55,7 @@ Requires **Node 22** (see `.nvmrc`); any Node 20.19+/22.12+ satisfies Vite 8.
 
 ```
 nvm use
-command npm install          # note: `command ` bypasses this machine's npm wrapper
+npm install
 cp .env.example .env         # fill in a real VITE_LASTFM_API_KEY
 npm run dev                  # http://localhost:5173
 npm test                     # Vitest (lastfm + listLogic units)
